@@ -2123,8 +2123,6 @@
   "integrity" "sha512-hC37mm7aAdEb1n8SgggG8a1QuhZapsY/XLCi4ETSH6AVjXBCWEa50CXlOsAMPPWLnSx5Ns6mzz39uvuseh0Xjg=="
   "resolved" "https://registry.yarnpkg.com/babel-plugin-add-module-exports/-/babel-plugin-add-module-exports-0.3.3.tgz"
   "version" "0.3.3"
-  dependencies:
-    "chokidar" "^2.0.4"
   optionalDependencies:
     "chokidar" "^2.0.4"
 
@@ -2956,7 +2954,6 @@
     "anymatch" "^2.0.0"
     "async-each" "^1.0.1"
     "braces" "^2.3.2"
-    "fsevents" "^1.2.7"
     "glob-parent" "^3.1.0"
     "inherits" "^2.0.3"
     "is-binary-path" "^1.0.0"
@@ -2975,7 +2972,6 @@
   dependencies:
     "anymatch" "~3.1.1"
     "braces" "~3.0.2"
-    "fsevents" "~2.1.2"
     "glob-parent" "~5.1.0"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -3053,7 +3049,6 @@
   "resolved" "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.5.1.tgz"
   "version" "0.5.1"
   dependencies:
-    "colors" "^1.1.2"
     "object-assign" "^4.1.0"
     "string-width" "^2.1.1"
   optionalDependencies:
@@ -5726,8 +5721,6 @@
     "gatsby-core-utils" "^1.1.1"
     "gatsby-telemetry" "^1.2.2"
     "hosted-git-info" "^3.0.4"
-    "ink" "^2.7.1"
-    "ink-spinner" "^3.0.1"
     "is-valid-path" "^0.1.1"
     "lodash" "^4.17.15"
     "meant" "^1.0.1"
@@ -8253,8 +8246,6 @@
   "integrity" "sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss="
   "resolved" "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz"
   "version" "4.0.0"
-  dependencies:
-    "graceful-fs" "^4.1.6"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
 
@@ -8263,7 +8254,6 @@
   "resolved" "https://registry.npmjs.org/jsonfile/-/jsonfile-6.0.1.tgz"
   "version" "6.0.1"
   dependencies:
-    "graceful-fs" "^4.1.6"
     "universalify" "^1.0.0"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
@@ -8401,12 +8391,6 @@
   dependencies:
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
-
-"lighthousebot@git+https://github.com/GoogleChromeLabs/lighthousebot.git":
-  "version" "0.2.0"
-  dependencies:
-    "minimist" "^1.2.0"
-    "node-fetch" "^2.2.0"
 
 "lines-and-columns@^1.1.6":
   "integrity" "sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA="
@@ -9432,7 +9416,7 @@
   "resolved" "https://registry.yarnpkg.com/node-eta/-/node-eta-0.9.0.tgz"
   "version" "0.9.0"
 
-"node-fetch@^2.2.0", "node-fetch@^2.6.0", "node-fetch@2.6.0":
+"node-fetch@^2.6.0", "node-fetch@2.6.0":
   "integrity" "sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA=="
   "resolved" "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz"
   "version" "2.6.0"
@@ -10981,8 +10965,6 @@
   "integrity" "sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA=="
   "resolved" "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz"
   "version" "1.23.0"
-  dependencies:
-    "clipboard" "^2.0.0"
   optionalDependencies:
     "clipboard" "^2.0.0"
 
