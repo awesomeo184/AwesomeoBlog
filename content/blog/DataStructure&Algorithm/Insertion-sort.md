@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-## 기본 아이디어
+# 기본 아이디어
 
 카드 놀이를 할 때 손 안에 쥔 카드를 정렬하는 방법과 같다.
 
@@ -19,13 +19,13 @@ draft: false
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OGzPmgsI-pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 삽입 정렬의 특징
+# 삽입 정렬의 특징
 * 구현이 쉽다.
 * 제자리 정렬이다.
 * 안정 정렬이다.
 * 시간 복잡도가 O($$n^{2}$$)으로 느리다.
 
-## 의사코드
+# 의사코드
 
 ```
 Algorithm Insertion_Sort(A)
@@ -47,7 +47,7 @@ Algorithm Insertion_Sort(A)
         A[i + 1] = key
 ```
 
-## 시간 복잡도
+# 시간 복잡도
 
 for-loop를 한번 돌 때마다 비교 연산의 횟수가 1, 2, 3, ..., n-1로 점차 증가한다.
 
@@ -55,7 +55,7 @@ for-loop를 한번 돌 때마다 비교 연산의 횟수가 1, 2, 3, ..., n-1로
 
 스왑 연산의 횟수는 비교 연산의 횟수보다 같거나 작으므로 전체 시간 복잡도는 O($$n^{2}$$)이다.
 
-## 파이썬 코드
+# 파이썬 코드
 
 ```python
 def insertion_sort(array):
@@ -67,7 +67,7 @@ def insertion_sort(array):
         array[i] = key
 ```
 
-### 만약 내림차순으로 정렬해야 된다면?
+## 만약 내림차순으로 정렬해야 된다면?
 마찬가지로 뒤에서 앞으로 정렬하되, A[i] < key 인 동안 A[i]를 한칸 뒤로 옮긴다.
 
 ```python
