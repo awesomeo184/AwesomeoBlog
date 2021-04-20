@@ -1,7 +1,7 @@
 ---
 title: '[정렬] 버블정렬(Bubble Sort)'
 date: 2021-03-11 20:04:63
-category: datastructure&algorithm
+category: 'DataStructure&Algorithm'
 thumbnail: { thumbnailSrc }
 draft: false
 ---

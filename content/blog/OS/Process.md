@@ -64,7 +64,10 @@ registers, MMU info, CPU 사용시간, Process id 등을 저장하고 있다.
 ![PCB](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeKgCWo%2Fbtq2npjl5dZ%2FpYbh3TtQ9AiUk6t6M9kVjk%2Fimg.png)
 
 
-## Queues
+# Process Scheduling
+
+## Scheduler & Queues
+
 하드디스크에는 수많은 프로그램이 있다. 이 중 일부만이 메인 메모리에 올라올 수 있다. 또 메인 메모리에 올라온 것 중 일부만이 CPU 서비스를 받을 수 있다. 
 서비스를 받아야 하는 것들은 많은데, 이를 다 수용할 수는 없기 때문에 줄을 서서 기다릴 수밖에 없는데, 이 줄도 OS가 관리한다.
 
@@ -92,6 +95,8 @@ CPU scheduler가 임의의 프로세서 P2를 다음 프로세스로 선택한�
 그리고 이렇게 실행되는 프로세스를 교체하는 것을 `context switching`이라고 한다.
 
 PCB의 정보를 저장하고 로드하는데 드는 비용을 context switching overhead라고 한다.
+
+![image](https://user-images.githubusercontent.com/63030569/115208127-33d80380-a137-11eb-881f-70a00d4ece49.png)
 
 ## 기타 용어들
 
