@@ -1,6 +1,6 @@
 ---
 title: '[Java Study 1주차] JVM은 무엇이고 자바 프로그램은 어떻게 실행되는가'
-date: 2020-03-13 15:04:27
+date: 2020-12-28 15:04:27
 category: 'Java-Basic'
 thumbnail: { thumbnailSrc }
 draft: false
