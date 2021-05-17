@@ -1,5 +1,5 @@
 ---
-title: '[컴퓨터구조] CPU 성능, Clock Speed, CPI'
+title: '[컴퓨터구조] 지역성의 원칙'
 date: 2020-11-13 13:04:63
 category: 'ComputerArchitecture'
 thumbnail: { thumbnailSrc }
