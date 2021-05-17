@@ -1,5 +1,5 @@
 ---
-title: '[OS] 메모리 관리(1)'
+title: '[OS] 메모리 관리(1) - 동적 로딩,연결,스와핑'
 date: 2021-05-14 16:44:63
 category: OS
 thumbnail: { thumbnailSrc }
