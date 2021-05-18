@@ -49,6 +49,7 @@ JVM이 있기 때문에 자바는 WORA(Write Once Run Anywhere)가 가능합니�
 아래의 그림을 참고해주세요.
 
 ![image](http://www.tcpschool.com/lectures/img_java_programming.png)
+
 출처: http://www.tcpschool.com/java/java_intro_programming
 
 ## JIT(Just-In-Time) 컴파일러란?
