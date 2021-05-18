@@ -48,7 +48,7 @@ JVM이 있기 때문에 자바는 WORA(Write Once Run Anywhere)가 가능합니�
 소스파일(*.java) -> 바이트코드(*.class) 변환은 컴파일 시점에서 자바 컴파일러(javac.exe)가 수행하고, 바이트코드 -> 기계어 변환은 런타임 환경, 즉 실행 과정에서 자바 인터프리터와 JIT 컴파일러가 수행합니다. 
 아래의 그림을 참고해주세요.
 
-![image](http://www.tcpschool.com/lectures/img_java_programming.png)
+![img_java_programming (1)](https://user-images.githubusercontent.com/63030569/118604942-b4e6f100-b7f0-11eb-8b0b-d13a67f70c56.png)
 
 출처: http://www.tcpschool.com/java/java_intro_programming
 
