@@ -21,9 +21,9 @@ draft: false
 
 ![3264570B-2D8C-4336-B91B-62F0B6253208](https://user-images.githubusercontent.com/63030569/115959839-2bbe0080-a549-11eb-8f61-65d2a6e64684.png)
 
-원시 자료형의 이름과 크기는 외워둬야 한다. 특히 int가 4 bytes(1byte = 8 bits)라는 것 정도는 상식으로 알고 있어야 한다.
+원시 자료형의 이름과 크기는 외워두는 것이 좋다.
 
-> 왜 int는 4 bytes일까? 간단히 말하면 32 bits 즉 4 bytes가 컴퓨터의 기본 단위로 계산하기 가장 좋았기 때문이다. [이 글](https://cs50.stackexchange.com/questions/2404/sizeofint-is-2-bytes-in-some-computers-while-it-is-4-bytes-in-most-modern-one)을 참조했다.
+> C 에서는 시스템에 따라 자료형의 크기가 달라지지만 Java는 자료형의 크기가 고정되어 있다.
 
 한 비트로 표현할 수 있는 정보의 양은 두 개다. 0이면 거짓, 1이면 참을 표현할 수 있다. 그래서 boolean의 크기는 1byte이다. 
 정확히 말하면 1bit만 있으면 참, 거짓을 표현할 수 있지만 컴퓨터의 최소 저장 단위가 byte이기 때문에 byte를 사용한다.
