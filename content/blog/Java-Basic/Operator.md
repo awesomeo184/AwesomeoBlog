@@ -63,7 +63,7 @@ draft: false
 ## 산술 연산자
 
 산술 연산을 수행한다. 어려운 부분은 아니니 몇 가지 주의할 사항만 확인하고 넘어가도록 하자. 프로그래밍을 접하지 않은 사람은 `%`가 낯설 수 있는데, `%`는 두 수를 나눈 나머지를 반환하는 연산자이다. 연산에는
-타입 프로모션 규칙이 적용된다. 즉 서로 다른 자료형을 연산할 경우, 결과값은 표현 범위가 더 넓은 자료형으로 타입 프로모션이 일어난다.
+타입 프로모션 규칙이 적용된다. 즉 서로 다른 자료형을 연산할 경우, 결과값은 표현 범위가 더 넓은 자료형으로 형변환이 일어난다.
 
 '+' 연산자로 문자열 연결(concatenation)이 가능하다. 연산은 왼쪽에서 오른쪽으로 진행되며, 문자열이 나타날 경우, 문자열로 변환되어 계산된다. 예시를 보자.
 
@@ -400,5 +400,127 @@ public class ConditionOperator {
 
 여담으로, 우아한 테크코스 프리코스 과정에 참여했을 때, 과제의 요구 사항 중에 삼항 연산자를 사용하지 말라는 항목이 있었다. 
 가독성 때문에 그런 것으로 추측하는데, 개인적으로 정말 3항 연산자가 if문보다 가독성이 떨어지는지는 잘 모르겠다.
+
+## switch 연산자
+
+Java 12에 switch expression이 추가되었다. 기존의 switch statement와 달리 "식"이기 때문에 값으로 평가될 수 있으며
+더 간결한 코드로 나타낼 수 있다. 대략적인 특징은 다음과 같다.
+
+**switch statement**
+* break문이 없으면 다음 분기로 넘어간다.
+* default label이 강제되지 않는다.
+* return문을 사용할 수 없다.
+
+**switch expression**
+* break문이 필요없다.
+* yield문이 사용 가능하다(Java 13부터).
+* return문이 사용 가능하다.
+* case -> A 형식으로 사용한다.
+* default label이 없으면 컴파일 에러를 던진다(case가 모든 경우를 커버한다면 없어도 됨).
+
+```java 
+public class SwitchEx {
+
+    public static void main(String[] args) {
+
+        //* switch statement
+        int month = 8;
+        String monthString = "";
+        switch (month) {
+            case 1:  monthString = "January";
+                break;
+            case 2:  monthString = "February";
+                break;
+            case 3:  monthString = "March";
+                break;
+            case 4:  monthString = "April";
+                break;
+            case 5:  monthString = "May";
+                break;
+            case 6:  monthString = "June";
+                break;
+            case 7:  monthString = "July";
+                break;
+            case 8:  monthString = "August";
+                break;
+            case 9:  monthString = "September";
+                break;
+            case 10: monthString = "October";
+                break;
+            case 11: monthString = "November";
+                break;
+            case 12: monthString = "December";
+                break;
+        }
+        System.out.println(monthString);
+    }
+}
+```
+<br>
+
+위 switch/case 문은 다음과 같이 변환할 수 있다.
+
+
+```java
+
+public class SwitchEx {
+
+    public static void main(String[] args) {
+
+        //* Java 12 switch expression
+
+        int month = 0;
+        String monthString = switch (month) {
+            case 1 -> "January";
+            case 2 -> "February";
+            case 3 -> "March";
+            case 4 -> "April";
+            case 5 -> "May";
+            case 6 -> "June";
+            case 7 -> "July";
+            case 8 -> "August";
+            case 9 -> "September";
+            case 10 -> "October";
+            case 11 -> "November";
+            case 12 -> "December";
+            default -> throw new IllegalStateException("Unexpected value: " + month);
+        }; // 식이기 때문에 끝에 세미콜론을 붙여줘야함
+
+        System.out.println(monthString);
+    }
+}
+```
+<br>
+
+출력만 하는게 목적이라면 이렇게 바꿔버릴 수도 있다.
+
+```java 
+public class SwitchEx {
+
+    public static void main(String[] args) {
+
+        //* Java 12 switch expression
+
+        int month = 0;
+
+        System.out.println(switch (month) {
+            case 1 -> "January";
+            case 2 -> "February";
+            case 3 -> "March";
+            case 4 -> "April";
+            case 5 -> "May";
+            case 6 -> "June";
+            case 7 -> "July";
+            case 8 -> "August";
+            case 9 -> "September";
+            case 10 -> "October";
+            case 11 -> "November";
+            case 12 -> "December";
+            default -> throw new IllegalStateException("Unexpected value: " + month);
+        });
+    }
+}
+```
+
 
 
