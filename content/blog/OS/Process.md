@@ -1,6 +1,6 @@
 ---
 title: '[OS] 프로세스란?'
-date: 2021-04-19 13:04:63
+date: 2021-04-11 13:04:63
 category: OS
 thumbnail: { thumbnailSrc }
 draft: false

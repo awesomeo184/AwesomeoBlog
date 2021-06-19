@@ -3,7 +3,7 @@ title: '한 권으로 읽는 컴퓨터 구조와 프로그래밍 Ch.1'
 date: 2021-05-25 14:04:63
 category: 'ComputerArchitecture'
 thumbnail: { thumbnailSrc }
-draft: false
+draft: true
 ---
 
 [파이썬 알고리즘 인터뷰](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791189909178) 를 쓰신 박상길 님이 어느 날 페이스북에 이 책을 추천하셨다. 무슨 책인지 궁금해서 
