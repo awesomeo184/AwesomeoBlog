@@ -153,3 +153,9 @@ Time quantum( or time slice)를 정해놓고, 이 시간이 지나면 프로세�
 ![image](https://user-images.githubusercontent.com/63030569/122638111-3fdb4400-d12d-11eb-9f1b-a775be198414.png)
 
 Round Robin 알고리즘의 퍼포먼스는 time quantum에 의존적이다. time quantum이 무한에 가까워질수록 퍼포먼스는 FCFS와 같아진다. time quantum이 0에 가까워질수록 context switching이 매우 빈번하게 일어나므로 오버헤드도 증가한다.
+
+### 참고 자료
+
+Operating System Concepts
+
+양희재 교수님 KOCW 운영체제 강의 (www.kocw.net/home/search/kemView.do?kemId=978503)
