@@ -1,7 +1,7 @@
 ---
 title: '[Java] 클래스 멤버는 왜 인스턴스 멤버를 참조할 수 없을까?'
 date: 2020-12-30 14:23:27
-category: 'Java-Basic'
+category: 'The Java'
 thumbnail: { thumbnailSrc }
 draft: false
 ---
