@@ -1,7 +1,7 @@
 ---
 title: '동기와 비동기, 블로킹과 논블로킹'
 date: 2021-06-26 13:13:27
-category: 'Java-Basic'
+category: OS
 thumbnail: { thumbnailSrc }
 draft: false
 ---
